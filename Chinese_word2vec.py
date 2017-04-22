@@ -2,7 +2,7 @@
 """
 Created on Mon Apr  3 12:05:21 2017
 
-@author: Administrator
+@author: YoungHao
 """
 
 
@@ -290,28 +290,6 @@ def dictionary2pickle():
     #dump()函数接受一个可序列化的Python数据结构  
         pickle.dump(final_dictionary,f)  
         print('success')
-        
-        
-        
-#pickle样例
-        
-def dump_pickle():  
-    user={}  
-    user['id']=1  
-    user['name']='tanweijie'  
-    user['email']='tanweijie@outlook.com'  
-    user['sex']='boy'  
-  
-    #with保证自动关闭文件  
-    #设置文件模式为'wb'来以二进制写模式打开文件  
-    with open('user.pickle','wb') as f:  
-        #dump()函数接受一个可序列化的Python数据结构  
-        pickle.dump(user,f)  
-        print('success')  
-  
-#反序列化  
-def load_pickle():  
-    with open('dict.pickle','rb') as f:  
-        final_dictionary=pickle.load(f)  
-    #user变量是一个字典      
+         
+dictionary2pickle()
 
